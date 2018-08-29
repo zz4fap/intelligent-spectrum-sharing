@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include "srslte/intf/intf.h"
-#include "../../../../communicator/cpp/communicator_wrapper.h"
+#include "../../communicator/cpp/communicator_wrapper.h"
 
 void print_received_basic_control(basic_ctrl_t *basic_ctrl);
 

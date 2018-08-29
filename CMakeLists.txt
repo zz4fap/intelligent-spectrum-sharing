@@ -163,10 +163,14 @@ message(STATUS "Building for version: ${VERSION}")
 include_directories(${PROJECT_BINARY_DIR}/srslte/include/)
 include_directories(${PROJECT_SOURCE_DIR}/srslte/include/)
 include_directories(${PROJECT_SOURCE_DIR}/mex/include)
+include_directories(logging)
 
 ########################################################################
 # Add the subdirectories
 ########################################################################
+add_subdirectory(logging)
+add_subdirectory(communicator)
 add_subdirectory(srslte)
-#add_subdirectory(mex)
+add_subdirectory(mex)
 add_subdirectory(phy)
+
